@@ -1,7 +1,7 @@
 import pyodbc
 connectshion = pyodbc.connect("Driver={ODBC Driver 17 for SQL Server};"
                           "server=.;"
-                          "Database=start2;"
+                          "Database=student;"
                           "Trusted_Connection=yes;")
 curser = connectshion.cursor()
 
