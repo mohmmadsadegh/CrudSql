@@ -31,7 +31,8 @@ class Repository:
 
     def update(self, table_name, set_clause, where_clause):
         try:
-            query = f"UPDATE {table_name} SET {set_clause} WHERE {where_clause}"
+            query = f"""UPDATE {table_name} SET {set_clause}
+            WHERE {where_clause}"""
             self.cursor.execute(query)
             self.connection.commit()
             return True
